@@ -29,27 +29,20 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "ᴀᴅᴅ sᴇɴᴏʀɪᴛᴀ",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
-                ],
+                    InlineKeyboardButton("ϲοммαи∂ѕ", callback_data="cbcmds")],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🔥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🔥 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
-                    )
                 ],
             ]
         ),
@@ -64,7 +57,7 @@ async def cbhelp(_, query: CallbackQuery):
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -111,7 +104,7 @@ async def cbbasic(_, query: CallbackQuery):
 /admincache - refresh the admin cache
 /ubjoinc - invite the assistant for join to your channel
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -130,7 +123,7 @@ async def cbadvanced(_, query: CallbackQuery):
 /uptime - check the bot uptime status
 /id - show the group/user id & other
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -158,7 +151,7 @@ async def cbadmin(_, query: CallbackQuery):
 /m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
 /um - to unmute user you're muted in group
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -175,7 +168,7 @@ async def cbsudo(_, query: CallbackQuery):
 /stats - show the bot statistic
 /rmd - remove all downloaded files
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -195,7 +188,7 @@ async def cbowner(_, query: CallbackQuery):
 
 📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -214,7 +207,7 @@ async def cbfun(_, query: CallbackQuery):
 /dare - check it by yourself
 /tts (text) - text to speech
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbhelp")]]
         ),
@@ -231,7 +224,7 @@ async def cbguide(_, query: CallbackQuery):
 3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
 4.) turn on the voice chat first before start to play music.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📚 Command List", callback_data="cbhelp")],
@@ -294,7 +287,7 @@ and you can also set a time for the ban and mute penalties for members in your g
 
 📝 note: cmd /b, /tb and /ub is the function to banned/unbanned user from your group, whereas /m, /tm and /um are commands to mute/unmute user in your group.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbback")]]
         ),
@@ -318,7 +311,7 @@ async def cbdelcmds(_, query: CallbackQuery):
  2️⃣ to turn off feature:
      » type `/delcmd off`
       
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbback")]]
         ),
@@ -332,7 +325,7 @@ async def cbhelps(_, query: CallbackQuery):
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -361,7 +354,7 @@ async def cbguides(_, query: CallbackQuery):
 3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
 4.) turn on the voice chat first before start to play music.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🏡 Go Back", callback_data="cbstart")]]
         ),
